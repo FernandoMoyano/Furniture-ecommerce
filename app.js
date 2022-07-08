@@ -4,7 +4,7 @@ const cartBtn = document.querySelector(".cart-btn");
 const closeCartBtn = document.querySelector(".close-cart");
 const clearCartBtn = document.querySelector(".clear-cart");
 const cartDOM = document.querySelector(".cart");
-const cartOverlay = document.querySelector(".cart-overaly");
+const cartOverlay = document.querySelector(".cart-overlay");
 const cartItems = document.querySelector(".cart-items");
 const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
@@ -100,7 +100,9 @@ class UI {
                     //set cart values
                     this.setCartValues(cart);
                     //dispplay cart item
+                    this.addCartItem(cartItem);
                     //show the cart
+                    this.showCart();
                 })
             }
         });
@@ -114,7 +116,31 @@ class UI {
         })
         cartTotal.innerText = parseFloat(tempTotal.toFixed(2))
         cartItems.innerText = itemsTotal;
-        console.log(cartTotal, cartItems);
+
+    }
+
+    addCartItem(item) {
+        const div = document.createElement("div");
+        div.classList.add("cart-item");
+        div.innerHTML = `<img src= ${item.image} alt="product">
+        <div>
+            <h4>${item.title}</h4>
+            <h5>${item.price}</h5>
+            <span class="remove-item" data-id=${item.id}>remove</span>
+        </div>
+        <div>
+            <i class="fas fa-chevron-up" data-id=${item.id}></i>
+            <p class="item-amount">${item.amount}</p>
+            <i class="fas fa-chevron-down" data-id=${item.id}></i>
+        </div>`;
+
+        cartContent.appendChild(div);
+
+    }
+
+    showCart() {
+        cartOverlay.classList.add("transparentBcg");
+        cartDOM.classList.add("ShowCart");
     }
 }
 
