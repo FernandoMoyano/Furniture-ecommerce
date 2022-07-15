@@ -1,4 +1,4 @@
-//variables
+/* -------------------------------- variables ------------------------------- */
 
 const cartBtn = document.querySelector(".cart-btn");
 const closeCartBtn = document.querySelector(".close-cart");
@@ -17,7 +17,9 @@ let cart = [];
 let buttonsDOM
 
 
-//getting the products
+/* -------------------------- getting the products -------------------------- */
+
+
 class Products {
     async getProducts() {
         try {
@@ -50,7 +52,9 @@ class Products {
     }
 }
 
-//display products
+/* ---------------------------- display products ---------------------------- */
+
+
 class UI {
     displayProducts(products) {
         console.log(products);
@@ -169,7 +173,42 @@ class UI {
         clearCartBtn.addEventListener("click", () => {
             this.clearCart()
         });
+
+
         /* cart funcionality */
+        cartContent.addEventListener("click", event => {
+            if (event.target.classList.contains('remove-item')) {
+                let removeItem = event.target;
+                let id = removeItem.dataset.id;
+                cartContent.removeChild(removeItem.parentElement.parentElement);
+                this.removeItem(id);
+                
+            } else if (event.target.classList.contains("fa-chevron-up")) {
+                let addAmount = event.target;
+                let id = addAmount.dataset.id;
+                let tempItem = cart.find(item => item.id === id);
+                tempItem.amount = tempItem.amount + 1;
+                Storage.saveCart(cart);
+                this.setCartValues(cart);
+                addAmount.nextElementSibling.innerText = tempItem.amount;
+
+            } else if (event.target.classList.contains("fa-chevron-down")) {
+                let lowerAmount = event.target;
+                let id = lowerAmount.dataset.id;
+                let tempItem = cart.find(item => item.id === id);
+                tempItem.amount = tempItem.amount - 1;
+                if (tempItem.amount > 0) {
+                    Storage.saveCart(cart);
+                    this.setCartValues(cart);
+                    lowerAmount.previousElementSibling.innerText = tempItem.amount;
+                } else {
+                    cartContent.removeChild(lowerAmount.parentElement.parentElement)
+                    this.removeItem(id);
+                }
+
+            }
+
+        });
     }
     /* vaciar carrito */
     clearCart() {
@@ -188,14 +227,16 @@ class UI {
         Storage.saveCart(cart);
         let button = this.getSingleButton(id);
         button.disabled = false;
-        button.innerHTML = `<i class="fas fa-shopping-cart>add to cart</i>`;
+        button.innerHTML = `<i class ="fas fa-shopping-cart>add to cart</i>`;
 
     }
     getSingleButton(id) {
         return buttonsDOM.find(button => button.dataset.id === id);
     }
 }
-//local storage
+
+
+/* ------------------------------ local storage ----------------------------- */
 class Storage {
     static saveProducts(products) {
         localStorage.setItem("products", JSON.stringify(products));
@@ -212,6 +253,10 @@ class Storage {
             JSON.parse(localStorage.getItem("cart")) : []
     }
 }
+
+
+/* --------------------------------DOM Content Loaded------------------------------------------- */
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const ui = new UI()
