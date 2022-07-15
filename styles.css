@@ -258,11 +258,7 @@ body {
 /*---------- End of Cart Item -------------------- */
 
 .cart-footer {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center; */
+ 
   margin-top: 2rem;
   letter-spacing: var(--mainSpacing);
   text-align: center;
