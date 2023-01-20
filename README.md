@@ -10,5 +10,5 @@
  <img width="50px" height="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
  </div>
  
- ## Project description
+ ## Description
  This Project is framed within a practice guided by the FreeCodeCamp platform which provides excellent quality training courses.
