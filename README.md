@@ -21,6 +21,10 @@
  <img width="50px" height="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
  </div>
  
+ ## _Resources_
+ [Font Awesome](https://fontawesome.com/)
+ >Font Awesome is the Internet's icon library and toolkit, used by millions of designers, developers, and content creators.
+ 
  ## _Style Guides_
  
  ### _Colors_
