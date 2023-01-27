@@ -6,7 +6,7 @@
   This ecommerce contains a series of products within the furniture sector, it presents functions that allow us to add products to the cart, add products individually,     delete products individually, add the total of the products and empty the cart.
   This project also contains a series of styles and effects to give the user a better experience.
 
-### _View Deployment_
+## _View Deployment_
 [Go to the Site](https://fernandomoyano.github.io/Furniture-ecommerce/)
 
 
