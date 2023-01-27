@@ -44,5 +44,10 @@
  setCartValues();
  addCartItem();
  showCart();
+ populateCart();
+ hideCart();
+ clearCart();
+ removeItem();
+ ```
  
 
