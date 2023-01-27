@@ -36,5 +36,13 @@
  ``` css
  @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
  ```
+ ### _Functions_
+ ``` javascript
+ getProducts();
+ displayProducts();
+ getBagButtons();
+ setCartValues();
+ addCartItem();
+ showCart();
  
 
