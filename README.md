@@ -10,7 +10,7 @@
 [Go to the Site](https://fernandomoyano.github.io/Furniture-ecommerce/)
 
 
-### _Lenguages_
+## _Lenguages_
 <link rel="stylesheet" href="devicon.min.css">
 
 <div "style=inline_block"><br>
