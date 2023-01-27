@@ -20,4 +20,21 @@
  <img width="50px" height="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
  </div>
  
+ ## _Style Guides_
+ 
+ ### _Colors_
+ ``` css
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+ ```
+ 
+ ### _Tipography_
+ ``` css
+ @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+ ```
+ 
 
