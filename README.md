@@ -1,6 +1,6 @@
 # _Furniture-ecommerce_
 
- ## Description
+ ### _Description_
  >This Project is framed within a practice guided by the FreeCodeCamp platform which provides excellent quality training courses.
   This Project is part of a Javascript guided practice by the FreeCodeCamp platform which provides excellent quality training courses.
   This ecommerce contains a series of products within the furniture sector, it presents functions that allow us to add products to the cart, add products individually,     delete products individually, add the total of the products and empty the cart.
