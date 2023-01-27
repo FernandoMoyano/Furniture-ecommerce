@@ -1,6 +1,6 @@
 # _Furniture-ecommerce_
 
- ### _Description_
+ ## _Description_
  >This Project is framed within a practice guided by the FreeCodeCamp platform which provides excellent quality training courses.
   This Project is part of a Javascript guided practice by the FreeCodeCamp platform which provides excellent quality training courses.
   This ecommerce contains a series of products within the furniture sector, it presents functions that allow us to add products to the cart, add products individually,     delete products individually, add the total of the products and empty the cart.
@@ -8,6 +8,7 @@
 
 ## _View Deployment_
 [Go to the Site](https://fernandomoyano.github.io/Furniture-ecommerce/)
+>GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website. You can see examples of GitHub Pages sites in the GitHub Pages examples collection.
 
 
 ## _Lenguages_
