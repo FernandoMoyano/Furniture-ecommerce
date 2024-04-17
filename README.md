@@ -6,9 +6,6 @@
   This ecommerce contains a series of products within the furniture sector, it presents functions that allow us to add products to the cart, add products individually,     delete products individually, add the total of the products and empty the cart.
   This project also contains a series of styles and effects to give the user a better experience.
 
-## _View Deployment_
-[Go to the Site](https://fernandomoyano.github.io/Furniture-ecommerce/)
->GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website. You can see examples of GitHub Pages sites in the GitHub Pages examples collection.
 
 
 ## _Lenguages_
